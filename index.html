@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Xello Front End Designer Test</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/css.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+	<!-- HEADER --->
+	<header id="header">
+		<div class="row">
+			<div class="col-md-9">
+				<h1>High-School Diploma 2017</h1>
+				<span class="status-indicator"><span class="badge badge-danger">14</span> Credits left!</span>
+			</div>
+			<div class="col-md-3 progress-block">
+				<div class="progress">
+					<div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress-legend"><strong>14</strong>&nbsp;/&nbsp;30</div>
+			</div>
+		</div>
+	</header>
+	<!-- // HEADER --->
+
+	<!-- FILTER FORM --->
+	<nav id="form-filter" class="navbar navbar-light bg-light">
+
+		<form class="form-inline">
+			<label for="f-Requirements">Requirements</label>
+			<select class="form-control" id="f-Requirements">
+				<option selected>Show all</option>
+				<option value="1">First requirement</option>
+				<option value="2">Second requirement</option>
+				<option value="3">Third requirement</option>
+			</select>
+
+			<div class="delimiter"></div>
+
+			<span class="form-label">Credits</span>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+				<label class="form-check-label" for="inlineCheckbox1">All</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+				<label class="form-check-label" for="inlineCheckbox2">Earned</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+				<label class="form-check-label" for="inlineCheckbox3">Planned</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+				<label class="form-check-label" for="inlineCheckbox4">Remained</label>
+			</div>
+		</form>
+	</nav>
+	<!-- //FILTER FORM --->
+
+
+	<!-- MAIN CONTENT --->
+	<main id="main">
+
+		<div class="card-deck class-years">
+
+			<!-- Card 1 --->
+			<div class="card class-year" tabindex="0">
+				<div class="card-header">
+					<h5>YEAR 9 (next year)</h5>
+					<p class="muted"><span>1</span> credit planned</p>
+				</div>
+				<div class="card-body">
+					<div class="slot-block">
+						<div class="slot slot-added">
+							<div class="row subject">
+								<div class="col-sm-9 subject-name">
+									<h6>English</h6>
+									<ul class="course-list">
+										<li class="course-list_name">ENG1P1</li>
+										<li class="course-list_desc">English</li>
+									</ul>
+								</div>
+								<div class="col-sm-3 subject-credit">
+									<div class="credit">1 cr.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot slot-added">
+							<div class="row subject">
+								<div class="col-sm-9 subject-name">
+									<h6>Functions</h6>
+									<ul class="course-list">
+										<li class="course-list_name">MAT1U1</li>
+										<li class="course-list_desc">Math 9</li>
+									</ul>
+								</div>
+								<div class="col-sm-3 subject-credit">
+									<div class="badge badge-danger popovered" tabindex="0" data-container="body" data-toggle="popover" data-placement="top" data-content="This course require a prerequisite.<br><a href='#'>Add One</a>">!</div>
+									<div class="credit">1 cr.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot slot-available" tabindex="0">
+							<div class="row subject">
+								<div class="col-sm-2 bg-primary subject-add">+</div>
+								<div class="col-sm-10 subject-name">
+									<h6>Add Science 9</h6>
+									<div class="muted">1 cr.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot slot-available" tabindex="0">
+							<div class="row subject">
+								<div class="col-sm-2 bg-primary subject-add">+</div>
+								<div class="col-sm-10 subject-name">
+									<h6>Add Geography 9</h6>
+									<div class="muted">1 cr.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot slot-available" tabindex="0">
+							<div class="row subject">
+								<div class="col-sm-2 bg-primary subject-add">+</div>
+								<div class="col-sm-10 subject-name">
+									<h6>Add French</h6>
+									<div class="muted">1 cr.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot slot-available" tabindex="0">
+							<div class="row subject">
+								<div class="col-sm-2 bg-primary subject-add">+</div>
+								<div class="col-sm-10 subject-name">
+									<h6>Add Elective</h6>
+									<div class="muted">16 credits remaining</div>
+								</div>
+							</div>
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+					</div>
+				</div>
+				<div class="card-footer bg-primary text-center">
+					<button class="btn btn-large btn-info class-submit">Ready to Submit</button>
+				</div>
+			</div>
+			<!-- //Card 1 --->
+
+			<!-- Card 2 --->
+			<div class="card disabled class-year" tabindex="0">
+				<div class="card-header">
+					<h5>YEAR 10</h5>
+					<p class="muted"><span>0</span> credits earned</p>
+				</div>
+				<div class="card-body">
+					<div class="slot-block">
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Subjects are not available yet</small>
+				</div>
+			</div>
+			<!-- //Card 2 --->
+
+			<!-- Card 3 --->
+			<div class="card disabled class-year" tabindex="0">
+				<div class="card-header">
+					<h5>YEAR 11</h5>
+					<p class="muted"><span>0</span> credits earned</p>
+				</div>
+				<div class="card-body">
+					<div class="slot-block">
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Subjects are not available yet</small>
+				</div>
+			</div>
+			<!-- //Card 3 --->
+
+			<!-- Card 4 --->
+			<div class="card disabled class-year" tabindex="0">
+				<div class="card-header">
+					<h5>YEAR 12</h5>
+					<p class="muted"><span>0</span> credits earned</p>
+				</div>
+				<div class="card-body">
+					<div class="slot-block">
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+						<div class="slot">
+							Available slot
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">Subjects are not available yet</small>
+				</div>
+			</div>
+			<!-- //Card 4 --->
+
+		</div>
+	</main>
+	<!-- //MAIN CONTENT --->
+</div>
+
+<script src="js/jslib.js"></script>
+<script src="js/js.js"></script>
+
+</body>
+</html>

@@ -18,6 +18,6 @@ The server will right after the install is completed.
  - Added accessibility feature to select form elements and subjects with TAB. 
  - Created custom outline for focused elements
 
-## How it should look
+## How it should look (animated GIF)
 
 ![Please see the gif](http://imakemagic.net/5ALcQW30Bp.gif)
